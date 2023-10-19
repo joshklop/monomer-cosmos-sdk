@@ -21,6 +21,23 @@ func NewReflectionService() (*ReflectionService, error) {
 		return nil, err
 	}
 
+	// load any protoregistry file descriptors not in gogo
+	protoregistry.GlobalFiles.RangeFiles(func(fileDescriptor protoreflect.FileDescriptor) bool {
+		if !haveFileDescriptor[fileDescriptor.Path()] {
+			fds.File = append(fds.File, protodesc.ToFileDescriptorProto(fileDescriptor))
+		}
+		return true
+	})
+
+	slices.SortFunc(fds.File, func(x, y *descriptorpb.FileDescriptorProto) int {
+		if *x.Name < *y.Name {
+			return -1
+		}
+		if *x.Name > *y.Name {
+			return 1
+		}
+		return 0
+	})
 	return &ReflectionService{files: fds}, nil
 }
 
