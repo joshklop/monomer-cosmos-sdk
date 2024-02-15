@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"sort"
-	"strings"
 
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
@@ -227,7 +226,13 @@ func InvokeAddRoutes(keeper *keeper.Keeper, routes []v1beta1.HandlerRoute) {
 	// Default route order is a lexical sort by RouteKey.
 	// Explicit ordering can be added to the module config if required.
 	slices.SortFunc(routes, func(x, y v1beta1.HandlerRoute) int {
-		return strings.Compare(x.RouteKey, y.RouteKey)
+		if x.RouteKey < y.RouteKey {
+			return -1
+		}
+		if x.RouteKey > y.RouteKey {
+			return 1
+		}
+		return 0
 	})
 
 	router := v1beta1.NewRouter()
