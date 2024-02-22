@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/mint/types"
 )
 
 var _ types.QueryServer = queryServer{}

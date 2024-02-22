@@ -3,10 +3,10 @@ package v2
 import (
 	storetypes "cosmossdk.io/core/store"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/mint/exported"
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/mint/exported"
+	"github.com/joshklop/monomer-cosmos-sdk/x/mint/types"
 )
 
 const (

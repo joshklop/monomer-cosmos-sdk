@@ -6,9 +6,9 @@ import (
 	"github.com/stretchr/testify/suite"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/testdata"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 type testMsgSuite struct {

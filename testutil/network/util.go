@@ -20,14 +20,14 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/server/api"
-	servergrpc "github.com/cosmos/cosmos-sdk/server/grpc"
-	servercmtlog "github.com/cosmos/cosmos-sdk/server/log"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/joshklop/monomer-cosmos-sdk/server"
+	"github.com/joshklop/monomer-cosmos-sdk/server/api"
+	servergrpc "github.com/joshklop/monomer-cosmos-sdk/server/grpc"
+	servercmtlog "github.com/joshklop/monomer-cosmos-sdk/server/log"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil"
+	genutiltypes "github.com/joshklop/monomer-cosmos-sdk/x/genutil/types"
 )
 
 func startInProcess(cfg Config, val *Validator) error {

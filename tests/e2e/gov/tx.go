@@ -9,18 +9,18 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/client/cli"
-	govclitestutil "github.com/cosmos/cosmos-sdk/x/gov/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	clitestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/cli"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/network"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/client/cli"
+	govclitestutil "github.com/joshklop/monomer-cosmos-sdk/x/gov/client/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/types"
+	v1 "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1beta1"
 )
 
 type E2ETestSuite struct {

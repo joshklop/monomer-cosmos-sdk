@@ -6,12 +6,12 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	simtestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/sims"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/testdata"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
+	v1 "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1beta1"
 )
 
 const (

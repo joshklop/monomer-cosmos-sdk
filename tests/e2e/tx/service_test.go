@@ -14,28 +14,28 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/simapp"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	authtest "github.com/cosmos/cosmos-sdk/x/auth/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	clienttx "github.com/joshklop/monomer-cosmos-sdk/client/tx"
+	addresscodec "github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/hd"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keyring"
+	kmultisig "github.com/joshklop/monomer-cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/cli"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/network"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/testdata"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
+	"github.com/joshklop/monomer-cosmos-sdk/types/query"
+	"github.com/joshklop/monomer-cosmos-sdk/types/tx"
+	"github.com/joshklop/monomer-cosmos-sdk/types/tx/signing"
+	authclient "github.com/joshklop/monomer-cosmos-sdk/x/auth/client"
+	authtest "github.com/joshklop/monomer-cosmos-sdk/x/auth/client/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/migrations/legacytx"
+	authtx "github.com/joshklop/monomer-cosmos-sdk/x/auth/tx"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
 )
 
 var bankMsgSendEventAction = fmt.Sprintf("message.action='%s'", sdk.MsgTypeURL(&banktypes.MsgSend{}))
@@ -323,8 +323,8 @@ func (s *E2ETestSuite) TestGetTxEvents_GRPC() {
 				s.Require().Equal(tc.expLen, len(grpcRes.Txs))
 
 				// Make sure fields are populated.
-				// ref: https://github.com/cosmos/cosmos-sdk/issues/8680
-				// ref: https://github.com/cosmos/cosmos-sdk/issues/8681
+				// ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/8680
+				// ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/8681
 				s.Require().NotEmpty(grpcRes.TxResponses[0].Timestamp)
 				s.Require().Empty(grpcRes.TxResponses[0].RawLog) // logs are empty if the transactions are successful
 			}
@@ -474,8 +474,8 @@ func (s *E2ETestSuite) TestGetTx_GRPCGateway() {
 				s.Require().NotZero(result.TxResponse.Height)
 
 				// Make sure fields are populated.
-				// ref: https://github.com/cosmos/cosmos-sdk/issues/8680
-				// ref: https://github.com/cosmos/cosmos-sdk/issues/8681
+				// ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/8680
+				// ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/8681
 				s.Require().NotEmpty(result.TxResponse.Timestamp)
 				s.Require().Empty(result.TxResponse.RawLog) // logs are empty on successful transactions
 			}

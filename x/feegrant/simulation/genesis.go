@@ -7,9 +7,9 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/x/feegrant"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/module"
+	simtypes "github.com/joshklop/monomer-cosmos-sdk/types/simulation"
 )
 
 // genFeeGrants returns a slice of randomly generated allowances.

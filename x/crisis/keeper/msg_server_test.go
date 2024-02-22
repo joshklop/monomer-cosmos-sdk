@@ -9,16 +9,16 @@ import (
 	sdkmath "cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"
 
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/crisis"
-	"github.com/cosmos/cosmos-sdk/x/crisis/keeper"
-	crisistestutil "github.com/cosmos/cosmos-sdk/x/crisis/testutil"
-	"github.com/cosmos/cosmos-sdk/x/crisis/types"
+	addresscodec "github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keyring"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/crisis"
+	"github.com/joshklop/monomer-cosmos-sdk/x/crisis/keeper"
+	crisistestutil "github.com/joshklop/monomer-cosmos-sdk/x/crisis/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/crisis/types"
 )
 
 type KeeperTestSuite struct {

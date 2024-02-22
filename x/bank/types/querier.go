@@ -1,8 +1,8 @@
 package types
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/query"
 )
 
 // Querier path constants

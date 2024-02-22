@@ -5,12 +5,12 @@ import (
 
 	"cosmossdk.io/math"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
+	v1 "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1beta1"
 )
 
 // ConvertToLegacyProposal takes a new proposal and attempts to convert it to the
@@ -64,7 +64,7 @@ func ConvertToLegacyProposal(proposal v1.Proposal) (v1beta1.Proposal, error) {
 	}
 	// hack to fill up the content with the first message
 	// this is to support clients that have not yet (properly) use gov/v1 endpoints
-	// https://github.com/cosmos/cosmos-sdk/issues/14334
+	// https://github.com/joshklop/monomer-cosmos-sdk/issues/14334
 	// VerifyBasic assures that we have at least one message.
 	legacyProposal.Content, err = codectypes.NewAnyWithValue(msgs[0])
 

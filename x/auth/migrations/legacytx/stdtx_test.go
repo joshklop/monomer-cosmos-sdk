@@ -14,15 +14,15 @@ import (
 	txsigning "cosmossdk.io/x/tx/signing"
 	"cosmossdk.io/x/tx/signing/aminojson"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	cryptocodec "github.com/joshklop/monomer-cosmos-sdk/crypto/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/ed25519"
+	kmultisig "github.com/joshklop/monomer-cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/testdata"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/tx/signing"
 )
 
 var (

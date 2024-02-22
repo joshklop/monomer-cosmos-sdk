@@ -13,10 +13,10 @@ import (
 
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/mock"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/mock"
+	"github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 type contextTestSuite struct {

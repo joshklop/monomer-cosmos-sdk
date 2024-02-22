@@ -18,17 +18,17 @@ import (
 	"github.com/stretchr/testify/suite"
 	"google.golang.org/grpc/codes"
 
-	"github.com/cosmos/cosmos-sdk/client/grpc/cmtservice"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	_ "github.com/cosmos/cosmos-sdk/x/auth"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config"
-	_ "github.com/cosmos/cosmos-sdk/x/bank"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	_ "github.com/cosmos/cosmos-sdk/x/genutil"
-	_ "github.com/cosmos/cosmos-sdk/x/params"
-	_ "github.com/cosmos/cosmos-sdk/x/staking"
+	"github.com/joshklop/monomer-cosmos-sdk/client/grpc/cmtservice"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/network"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/auth"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/auth/tx/config"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/bank"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/genutil"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/params"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/staking"
 )
 
 // https://github.com/improbable-eng/grpc-web/blob/master/go/grpcweb/wrapper_test.go used as a reference

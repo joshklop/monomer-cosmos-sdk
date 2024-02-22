@@ -14,12 +14,12 @@ import (
 	"cosmossdk.io/errors"
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	cryptocodec "github.com/joshklop/monomer-cosmos-sdk/crypto/codec"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
 )
 
 const (

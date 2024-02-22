@@ -7,8 +7,8 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	v1 "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1"
 )
 
 func TestEmptyGenesis(t *testing.T) {

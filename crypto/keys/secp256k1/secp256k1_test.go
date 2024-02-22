@@ -15,10 +15,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/ed25519"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
 )
 
 type keyData struct {
@@ -93,7 +93,7 @@ generateKeyForCheckingConsistency was used to create test vectors that matches c
 Here are the specific versions used to generate the vectors.
 
 github.com/cosmos/btcutil v1.0.5
-github.com/cosmos/cosmos-sdk v0.46.8
+github.com/joshklop/monomer-cosmos-sdk v0.46.8
 */
 var _ = func() keyData {
 	priv := secp256k1.GenPrivKey()

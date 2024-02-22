@@ -5,9 +5,9 @@ import (
 
 	"cosmossdk.io/x/tx/signing"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
 )
 
 // CodecOptions are options for creating a test codec.

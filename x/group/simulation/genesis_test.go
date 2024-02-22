@@ -9,13 +9,13 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	groupmodule "github.com/cosmos/cosmos-sdk/x/group/module"
-	"github.com/cosmos/cosmos-sdk/x/group/simulation"
+	"github.com/joshklop/monomer-cosmos-sdk/types/module"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	simtypes "github.com/joshklop/monomer-cosmos-sdk/types/simulation"
+	"github.com/joshklop/monomer-cosmos-sdk/x/bank"
+	"github.com/joshklop/monomer-cosmos-sdk/x/group"
+	groupmodule "github.com/joshklop/monomer-cosmos-sdk/x/group/module"
+	"github.com/joshklop/monomer-cosmos-sdk/x/group/simulation"
 )
 
 func TestRandomizedGenState(t *testing.T) {

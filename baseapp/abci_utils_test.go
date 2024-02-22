@@ -16,14 +16,14 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	baseapptestutil "github.com/cosmos/cosmos-sdk/baseapp/testutil"
-	"github.com/cosmos/cosmos-sdk/baseapp/testutil/mock"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/joshklop/monomer-cosmos-sdk/baseapp"
+	baseapptestutil "github.com/joshklop/monomer-cosmos-sdk/baseapp/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/baseapp/testutil/mock"
+	codectestutil "github.com/joshklop/monomer-cosmos-sdk/codec/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/testdata"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/mempool"
+	authtx "github.com/joshklop/monomer-cosmos-sdk/x/auth/tx"
 )
 
 const (

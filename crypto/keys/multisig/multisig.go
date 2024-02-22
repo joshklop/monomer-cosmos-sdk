@@ -5,10 +5,10 @@ import (
 
 	cmtcrypto "github.com/cometbft/cometbft/crypto"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	multisigtypes "github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	multisigtypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types/multisig"
+	"github.com/joshklop/monomer-cosmos-sdk/types/tx/signing"
 )
 
 var (
@@ -99,7 +99,7 @@ func (m *LegacyAminoPubKey) VerifyMultisignature(getSignBytes multisigtypes.GetS
 
 // VerifySignature implements cryptotypes.PubKey VerifySignature method,
 // it panics because it can't handle MultiSignatureData
-// cf. https://github.com/cosmos/cosmos-sdk/issues/7109#issuecomment-686329936
+// cf. https://github.com/joshklop/monomer-cosmos-sdk/issues/7109#issuecomment-686329936
 func (m *LegacyAminoPubKey) VerifySignature(msg, sig []byte) bool {
 	panic("not implemented")
 }

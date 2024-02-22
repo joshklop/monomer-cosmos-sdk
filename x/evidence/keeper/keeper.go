@@ -15,8 +15,8 @@ import (
 	"cosmossdk.io/x/evidence/exported"
 	"cosmossdk.io/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 // Keeper defines the evidence module's keeper. The keeper is responsible for

@@ -10,19 +10,19 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	addresscodec "github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/legacy"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	cryptocodec "github.com/joshklop/monomer-cosmos-sdk/crypto/codec"
+	kmultisig "github.com/joshklop/monomer-cosmos-sdk/crypto/keys/multisig"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/types/multisig"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/configurator"
+	"github.com/joshklop/monomer-cosmos-sdk/types/tx/signing"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/migrations/legacytx"
 )
 
 func TestNewMultiSig(t *testing.T) {
@@ -406,7 +406,7 @@ func TestAminoUnmarshalJSON(t *testing.T) {
 	// v0.39, hence the `threshold` field as a string.
 	// We are testing that when unmarshaling this JSON into a LegacyAminoPubKey
 	// with amino, there's no error.
-	// ref: https://github.com/cosmos/cosmos-sdk/issues/8776
+	// ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/8776
 	pkJSON := `{
 	"type": "tendermint/PubKeyMultisigThreshold",
 	"value": {

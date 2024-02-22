@@ -6,9 +6,9 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
 )
 
 // TxFeeChecker check if the provided fee is enough and returns the effective fee and tx priority,

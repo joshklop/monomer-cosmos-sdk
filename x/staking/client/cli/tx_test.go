@@ -12,19 +12,19 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	"github.com/cosmos/cosmos-sdk/x/staking/client/cli"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	addresscodec "github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/hd"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keyring"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/ed25519"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	clitestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/cli"
+	simtestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/sims"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	testutilmod "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking/client/cli"
 )
 
 var PKs = simtestutil.CreateTestPubKeys(500)
@@ -387,7 +387,7 @@ func (s *CLITestSuite) TestNewEditValidatorCmd() {
 			"",
 		},
 		{
-			"edit validator moniker", // https://github.com/cosmos/cosmos-sdk/issues/10660
+			"edit validator moniker", // https://github.com/joshklop/monomer-cosmos-sdk/issues/10660
 			[]string{
 				fmt.Sprintf("--%s=%s", cli.FlagEditMoniker, moniker),
 				fmt.Sprintf("--%s=%s", flags.FlagFrom, s.addrs[0]),

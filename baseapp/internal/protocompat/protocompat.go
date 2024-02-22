@@ -13,7 +13,7 @@ import (
 	"google.golang.org/protobuf/reflect/protoregistry"
 	"google.golang.org/protobuf/runtime/protoiface"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
 )
 
 var (
@@ -122,7 +122,7 @@ func makeGogoHybridHandler(prefMethod protoreflect.MethodDescriptor, cdc codec.B
 				return fmt.Errorf("invalid request type %T, method %s does not accept protov2 messages", inReq, prefMethod.FullName())
 			}
 			resp, err := method.Handler(handler, ctx, func(msg any) error {
-				// merge! ref: https://github.com/cosmos/cosmos-sdk/issues/18003
+				// merge! ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/18003
 				// NOTE: using gogoproto.Merge will fail for some reason unknown to me, but
 				// using proto.Merge with gogo messages seems to work fine.
 				proto.Merge(msg.(gogoproto.Message), inReq)
@@ -131,7 +131,7 @@ func makeGogoHybridHandler(prefMethod protoreflect.MethodDescriptor, cdc codec.B
 			if err != nil {
 				return err
 			}
-			// merge resp, ref: https://github.com/cosmos/cosmos-sdk/issues/18003
+			// merge resp, ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/18003
 			// NOTE: using gogoproto.Merge will fail for some reason unknown to me, but
 			// using proto.Merge with gogo messages seems to work fine.
 			proto.Merge(outResp.(gogoproto.Message), resp.(gogoproto.Message))
@@ -166,7 +166,7 @@ func makeGogoHybridHandler(prefMethod protoreflect.MethodDescriptor, cdc codec.B
 		case gogoproto.Message:
 			// we can just call the handler after making a copy of the message, for safety reasons.
 			resp, err := method.Handler(handler, ctx, func(msg any) error {
-				// ref: https://github.com/cosmos/cosmos-sdk/issues/18003
+				// ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/18003
 				asGogoProto := msg.(gogoproto.Message)
 				// NOTE: using gogoproto.Merge will fail for some reason unknown to me, but
 				// using proto.Merge with gogo messages seems to work fine.
@@ -176,7 +176,7 @@ func makeGogoHybridHandler(prefMethod protoreflect.MethodDescriptor, cdc codec.B
 			if err != nil {
 				return err
 			}
-			// merge on the resp, ref: https://github.com/cosmos/cosmos-sdk/issues/18003
+			// merge on the resp, ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/18003
 			// NOTE: using gogoproto.Merge will fail for some reason unknown to me, but
 			// using proto.Merge with gogo messages seems to work fine.
 			proto.Merge(outResp.(gogoproto.Message), resp.(gogoproto.Message))

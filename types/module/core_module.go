@@ -11,10 +11,10 @@ import (
 	"cosmossdk.io/core/genesis"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 var (

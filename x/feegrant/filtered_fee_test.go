@@ -12,10 +12,10 @@ import (
 	"cosmossdk.io/x/feegrant"
 	"cosmossdk.io/x/feegrant/module"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
 )
 
 func TestFilteredFeeValidAllow(t *testing.T) {

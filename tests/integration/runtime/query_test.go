@@ -15,17 +15,17 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	_ "github.com/cosmos/cosmos-sdk/x/auth"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config"
-	_ "github.com/cosmos/cosmos-sdk/x/bank"
-	_ "github.com/cosmos/cosmos-sdk/x/consensus"
-	_ "github.com/cosmos/cosmos-sdk/x/params"
-	_ "github.com/cosmos/cosmos-sdk/x/staking"
+	"github.com/joshklop/monomer-cosmos-sdk/baseapp"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/configurator"
+	simtestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/sims"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/auth"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/auth/tx/config"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/bank"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/consensus"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/params"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/staking"
 )
 
 type fixture struct {

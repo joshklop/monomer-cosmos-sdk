@@ -6,10 +6,10 @@ import (
 	sdkmath "cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/exported"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking/exported"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 // MigrateStore performs in-place store migrations from v3 to v4.

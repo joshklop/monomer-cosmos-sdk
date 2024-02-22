@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/x/auth/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/network"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
 )
 
 func TestAccountRetriever(t *testing.T) {

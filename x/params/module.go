@@ -10,15 +10,15 @@ import (
 	"cosmossdk.io/depinject"
 	store "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	"github.com/cosmos/cosmos-sdk/x/params/keeper"
-	"github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/module"
+	simtypes "github.com/joshklop/monomer-cosmos-sdk/types/simulation"
+	govv1beta1 "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/joshklop/monomer-cosmos-sdk/x/params/keeper"
+	"github.com/joshklop/monomer-cosmos-sdk/x/params/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/params/types/proposal"
 )
 
 var (

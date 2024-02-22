@@ -8,12 +8,12 @@ import (
 
 	"cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/server"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil/types"
 )
 
 const flagGenTxDir = "gentx-dir"

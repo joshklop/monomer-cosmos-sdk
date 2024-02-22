@@ -1,9 +1,9 @@
 package proposal
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	govtypes "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1beta1"
 )
 
 // RegisterLegacyAminoCodec registers all necessary param module types with a given LegacyAmino codec.

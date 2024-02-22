@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil/types"
 )
 
 //go:embed testdata/parse_chain_id.json

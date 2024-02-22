@@ -3,17 +3,17 @@ package simulation
 import (
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
-	disttypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/joshklop/monomer-cosmos-sdk/baseapp"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	simtestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/sims"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	simtypes "github.com/joshklop/monomer-cosmos-sdk/types/simulation"
+	"github.com/joshklop/monomer-cosmos-sdk/x/bank/keeper"
+	"github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
+	disttypes "github.com/joshklop/monomer-cosmos-sdk/x/distribution/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/simulation"
 )
 
 // Simulation operation weights constants

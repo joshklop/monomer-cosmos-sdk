@@ -10,14 +10,14 @@ import (
 	"github.com/cosmos/go-bip39"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/hd"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keyring"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/testdata"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
 )
 
 func Test_runAddCmdBasic(t *testing.T) {

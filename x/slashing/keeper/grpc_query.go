@@ -8,9 +8,9 @@ import (
 
 	"cosmossdk.io/store/prefix"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/types/query"
+	"github.com/joshklop/monomer-cosmos-sdk/x/slashing/types"
 )
 
 var _ types.QueryServer = Querier{}

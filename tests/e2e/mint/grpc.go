@@ -7,9 +7,9 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	grpctypes "github.com/joshklop/monomer-cosmos-sdk/types/grpc"
+	minttypes "github.com/joshklop/monomer-cosmos-sdk/x/mint/types"
 )
 
 func (s *E2ETestSuite) TestQueryGRPC() {

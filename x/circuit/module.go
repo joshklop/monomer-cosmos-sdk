@@ -16,15 +16,15 @@ import (
 	"cosmossdk.io/x/circuit/keeper"
 	"cosmossdk.io/x/circuit/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/joshklop/monomer-cosmos-sdk/baseapp"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/telemetry"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/module"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
 )
 
 // ConsensusVersion defines the current circuit module consensus version.

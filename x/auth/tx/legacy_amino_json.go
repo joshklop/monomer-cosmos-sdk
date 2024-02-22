@@ -5,11 +5,11 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
+	signingtypes "github.com/joshklop/monomer-cosmos-sdk/types/tx/signing"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/signing"
 )
 
 const aminoNonCriticalFieldsError = "protobuf transaction contains unknown non-critical fields. This is a transaction malleability issue and SIGN_MODE_LEGACY_AMINO_JSON cannot be used."

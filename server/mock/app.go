@@ -18,12 +18,12 @@ import (
 	"cosmossdk.io/log"
 	storetypes "cosmossdk.io/store/types"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/testutil"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	bam "github.com/joshklop/monomer-cosmos-sdk/baseapp"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/testutil"
+	servertypes "github.com/joshklop/monomer-cosmos-sdk/server/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	genutiltypes "github.com/joshklop/monomer-cosmos-sdk/x/genutil/types"
 )
 
 // NewApp creates a simple mock kvstore app for testing. It should work

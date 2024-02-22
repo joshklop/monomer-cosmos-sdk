@@ -8,13 +8,13 @@ import (
 
 	"cosmossdk.io/math"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/testdata"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
+	"github.com/joshklop/monomer-cosmos-sdk/types/tx/signing"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/ante"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
 )
 
 func TestDeductFeeDecorator_ZeroGas(t *testing.T) {

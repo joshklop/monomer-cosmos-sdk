@@ -10,16 +10,16 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	v3 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v3"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov"
+	v3 "github.com/joshklop/monomer-cosmos-sdk/x/gov/migrations/v3"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/types"
+	v1 "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1beta1"
 )
 
 var voter = sdk.MustAccAddressFromBech32("cosmos1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34mf0eh")

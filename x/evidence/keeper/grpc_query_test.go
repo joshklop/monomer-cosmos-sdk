@@ -8,7 +8,7 @@ import (
 	"cosmossdk.io/x/evidence/exported"
 	"cosmossdk.io/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/joshklop/monomer-cosmos-sdk/types/query"
 )
 
 func (suite *KeeperTestSuite) TestQueryEvidence() {

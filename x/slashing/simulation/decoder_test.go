@@ -7,13 +7,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/slashing/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/kv"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/slashing"
+	"github.com/joshklop/monomer-cosmos-sdk/x/slashing/simulation"
+	"github.com/joshklop/monomer-cosmos-sdk/x/slashing/types"
 )
 
 var (

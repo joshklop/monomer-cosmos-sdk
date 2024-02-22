@@ -40,38 +40,38 @@ import (
 	_ "cosmossdk.io/x/upgrade"    // import for side-effects
 	upgradetypes "cosmossdk.io/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config" // import for side-effects
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/vesting" // import for side-effects
-	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	_ "github.com/cosmos/cosmos-sdk/x/authz/module" // import for side-effects
-	_ "github.com/cosmos/cosmos-sdk/x/bank"         // import for side-effects
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	_ "github.com/cosmos/cosmos-sdk/x/consensus" // import for side-effects
-	consensustypes "github.com/cosmos/cosmos-sdk/x/consensus/types"
-	_ "github.com/cosmos/cosmos-sdk/x/crisis" // import for side-effects
-	crisistypes "github.com/cosmos/cosmos-sdk/x/crisis/types"
-	_ "github.com/cosmos/cosmos-sdk/x/distribution" // import for side-effects
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	_ "github.com/cosmos/cosmos-sdk/x/group/module" // import for side-effects
-	_ "github.com/cosmos/cosmos-sdk/x/mint"         // import for side-effects
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	_ "github.com/cosmos/cosmos-sdk/x/params" // import for side-effects
-	paramsclient "github.com/cosmos/cosmos-sdk/x/params/client"
-	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	_ "github.com/cosmos/cosmos-sdk/x/slashing" // import for side-effects
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	_ "github.com/cosmos/cosmos-sdk/x/staking" // import for side-effects
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/types/module"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/auth/tx/config" // import for side-effects
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/auth/vesting" // import for side-effects
+	vestingtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/vesting/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/authz"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/authz/module" // import for side-effects
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/bank"         // import for side-effects
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/consensus" // import for side-effects
+	consensustypes "github.com/joshklop/monomer-cosmos-sdk/x/consensus/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/crisis" // import for side-effects
+	crisistypes "github.com/joshklop/monomer-cosmos-sdk/x/crisis/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/distribution" // import for side-effects
+	distrtypes "github.com/joshklop/monomer-cosmos-sdk/x/distribution/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil"
+	genutiltypes "github.com/joshklop/monomer-cosmos-sdk/x/genutil/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov"
+	govclient "github.com/joshklop/monomer-cosmos-sdk/x/gov/client"
+	govtypes "github.com/joshklop/monomer-cosmos-sdk/x/gov/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/group"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/group/module" // import for side-effects
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/mint"         // import for side-effects
+	minttypes "github.com/joshklop/monomer-cosmos-sdk/x/mint/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/params" // import for side-effects
+	paramsclient "github.com/joshklop/monomer-cosmos-sdk/x/params/client"
+	paramstypes "github.com/joshklop/monomer-cosmos-sdk/x/params/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/slashing" // import for side-effects
+	slashingtypes "github.com/joshklop/monomer-cosmos-sdk/x/slashing/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/staking" // import for side-effects
+	stakingtypes "github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 var (

@@ -15,11 +15,11 @@ import (
 	"cosmossdk.io/store/metrics"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	paramsmodule "github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	paramsmodule "github.com/joshklop/monomer-cosmos-sdk/x/params"
+	"github.com/joshklop/monomer-cosmos-sdk/x/params/types"
 )
 
 type SubspaceTestSuite struct {

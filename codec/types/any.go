@@ -8,7 +8,7 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
 )
 
 // nolint:revive // XXX is reqired for proto compatibility

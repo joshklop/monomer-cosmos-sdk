@@ -7,13 +7,13 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	cryptocodec "github.com/joshklop/monomer-cosmos-sdk/crypto/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 var coinPos = sdk.NewInt64Coin(sdk.DefaultBondDenom, 1000)

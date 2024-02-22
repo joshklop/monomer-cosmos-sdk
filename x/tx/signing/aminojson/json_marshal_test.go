@@ -104,7 +104,7 @@ func TestAminoJSON(t *testing.T) {
 
 	// Now ensure that the default encoder behavior sorts fields and that they match
 	// as we'd have them from encoding/json.Marshal.
-	// Please see https://github.com/cosmos/cosmos-sdk/issues/2350
+	// Please see https://github.com/joshklop/monomer-cosmos-sdk/issues/2350
 	encodedDefaultBz, err := aminojson.NewEncoder(aminojson.EncoderOptions{}).Marshal(msg)
 	assert.NilError(t, err)
 

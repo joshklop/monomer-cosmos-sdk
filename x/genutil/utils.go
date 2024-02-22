@@ -14,9 +14,9 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 	"github.com/cosmos/go-bip39"
 
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	cryptocodec "github.com/joshklop/monomer-cosmos-sdk/crypto/codec"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil/types"
 )
 
 // ExportGenesisFile creates and writes the genesis configuration to disk. An

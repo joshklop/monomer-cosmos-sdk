@@ -9,8 +9,8 @@ import (
 
 	"cosmossdk.io/tools/confix/cmd"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	clitestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/cli"
 )
 
 func TestMigradeCmd(t *testing.T) {

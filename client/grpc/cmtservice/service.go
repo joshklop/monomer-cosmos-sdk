@@ -9,14 +9,14 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	qtypes "github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/joshklop/monomer-cosmos-sdk/baseapp"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	cryptocodec "github.com/joshklop/monomer-cosmos-sdk/crypto/codec"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	qtypes "github.com/joshklop/monomer-cosmos-sdk/types/query"
+	"github.com/joshklop/monomer-cosmos-sdk/version"
 )
 
 var (

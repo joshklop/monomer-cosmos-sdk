@@ -3,10 +3,10 @@ package v3
 import (
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/exported"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/slashing/exported"
+	"github.com/joshklop/monomer-cosmos-sdk/x/slashing/types"
 )
 
 const (

@@ -57,7 +57,7 @@ func (h SignModeHandler) Mode() signingv1beta1.SignMode {
 }
 
 // getFirstSigner returns the first signer from the first message in the tx. It replicates behavior in
-// https://github.com/cosmos/cosmos-sdk/blob/4a6a1e3cb8de459891cb0495052589673d14ef51/x/auth/tx/builder.go#L142
+// https://github.com/joshklop/monomer-cosmos-sdk/blob/4a6a1e3cb8de459891cb0495052589673d14ef51/x/auth/tx/builder.go#L142
 func (h SignModeHandler) getFirstSigner(txData signing.TxData) ([]byte, error) {
 	if len(txData.Body.Messages) == 0 {
 		return nil, fmt.Errorf("no signer found")

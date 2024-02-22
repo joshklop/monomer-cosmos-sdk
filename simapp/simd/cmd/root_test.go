@@ -9,9 +9,9 @@ import (
 	"cosmossdk.io/simapp"
 	"cosmossdk.io/simapp/simd/cmd"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	svrcmd "github.com/joshklop/monomer-cosmos-sdk/server/cmd"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil/client/cli"
 )
 
 func TestInitCmd(t *testing.T) {

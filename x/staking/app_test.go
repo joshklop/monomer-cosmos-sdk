@@ -11,16 +11,16 @@ import (
 	"cosmossdk.io/log"
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	bankKeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	stakingKeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/ed25519"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/secp256k1"
+	simtestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/sims"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
+	bankKeeper "github.com/joshklop/monomer-cosmos-sdk/x/bank/keeper"
+	stakingKeeper "github.com/joshklop/monomer-cosmos-sdk/x/staking/keeper"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 var (

@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/secp256k1"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
 )
 
 var (

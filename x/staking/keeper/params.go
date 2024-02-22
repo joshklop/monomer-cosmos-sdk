@@ -6,8 +6,8 @@ import (
 
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 // UnbondingTime - The time duration for unbonding
@@ -45,7 +45,7 @@ func (k Keeper) BondDenom(ctx context.Context) (string, error) {
 // PowerReduction - is the amount of staking tokens required for 1 unit of consensus-engine power.
 // Currently, this returns a global variable that the app developer can tweak.
 // TODO: we might turn this into an on-chain param:
-// https://github.com/cosmos/cosmos-sdk/issues/8365
+// https://github.com/joshklop/monomer-cosmos-sdk/issues/8365
 func (k Keeper) PowerReduction(ctx context.Context) math.Int {
 	return sdk.DefaultPowerReduction
 }

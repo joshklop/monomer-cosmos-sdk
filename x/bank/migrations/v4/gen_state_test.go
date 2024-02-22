@@ -7,9 +7,9 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v4 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v4"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	v4 "github.com/joshklop/monomer-cosmos-sdk/x/bank/migrations/v4"
+	"github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
 )
 
 func TestMigrateGenState(t *testing.T) {

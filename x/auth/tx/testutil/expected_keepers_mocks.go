@@ -8,7 +8,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	types "github.com/cosmos/cosmos-sdk/x/bank/types"
+	types "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

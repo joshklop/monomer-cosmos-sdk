@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	stakingtypes "github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 // NewGenesisState creates a new GenesisState object
 func NewGenesisState(genTxs []json.RawMessage) *GenesisState {
-	// Ensure genTxs is never nil, https://github.com/cosmos/cosmos-sdk/issues/5086
+	// Ensure genTxs is never nil, https://github.com/joshklop/monomer-cosmos-sdk/issues/5086
 	if len(genTxs) == 0 {
 		genTxs = make([]json.RawMessage, 0)
 	}

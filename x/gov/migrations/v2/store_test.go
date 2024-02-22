@@ -10,16 +10,16 @@ import (
 	"cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v1"
-	v2 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v2"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/testdata"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/address"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	v1 "github.com/joshklop/monomer-cosmos-sdk/x/gov/migrations/v1"
+	v2 "github.com/joshklop/monomer-cosmos-sdk/x/gov/migrations/v2"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1beta1"
 )
 
 func TestMigrateStore(t *testing.T) {

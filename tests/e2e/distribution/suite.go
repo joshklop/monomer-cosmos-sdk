@@ -12,16 +12,16 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/simapp"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/client/cli"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	svrcmd "github.com/joshklop/monomer-cosmos-sdk/server/cmd"
+	clitestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/cli"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/network"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/distribution/client/cli"
+	distrtypes "github.com/joshklop/monomer-cosmos-sdk/x/distribution/types"
+	minttypes "github.com/joshklop/monomer-cosmos-sdk/x/mint/types"
 )
 
 type E2ETestSuite struct {

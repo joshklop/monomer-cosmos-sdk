@@ -14,7 +14,7 @@ import (
 
 	snapshottypes "cosmossdk.io/store/snapshots/types"
 
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/joshklop/monomer-cosmos-sdk/server"
 )
 
 const SnapshotFileName = "_snapshot"

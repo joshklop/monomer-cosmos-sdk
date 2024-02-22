@@ -7,8 +7,8 @@ import (
 
 	"cosmossdk.io/x/evidence/exported"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 var (

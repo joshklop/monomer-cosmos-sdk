@@ -7,9 +7,9 @@ import (
 	cosmossdk_io_math "cosmossdk.io/math"
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"
-	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
-	types "github.com/cosmos/cosmos-sdk/types"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino"
+	github_com_cosmos_cosmos_sdk_types "github.com/joshklop/monomer-cosmos-sdk/types"
+	types "github.com/joshklop/monomer-cosmos-sdk/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/types/tx/amino"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"
@@ -94,7 +94,7 @@ func (m *Params) GetWithdrawAddrEnabled() bool {
 //	read that record)
 //	+ one per validator for the zeroeth period, set on initialization
 type ValidatorHistoricalRewards struct {
-	CumulativeRewardRatio github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=cumulative_reward_ratio,json=cumulativeRewardRatio,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.DecCoins" json:"cumulative_reward_ratio"`
+	CumulativeRewardRatio github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=cumulative_reward_ratio,json=cumulativeRewardRatio,proto3,castrepeated=github.com/joshklop/monomer-cosmos-sdk/types.DecCoins" json:"cumulative_reward_ratio"`
 	ReferenceCount        uint32                                      `protobuf:"varint,2,opt,name=reference_count,json=referenceCount,proto3" json:"reference_count,omitempty"`
 }
 
@@ -149,7 +149,7 @@ func (m *ValidatorHistoricalRewards) GetReferenceCount() uint32 {
 // period for a validator kept as a running counter and incremented
 // each block as long as the validator's tokens remain constant.
 type ValidatorCurrentRewards struct {
-	Rewards github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=rewards,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.DecCoins" json:"rewards"`
+	Rewards github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=rewards,proto3,castrepeated=github.com/joshklop/monomer-cosmos-sdk/types.DecCoins" json:"rewards"`
 	Period  uint64                                      `protobuf:"varint,2,opt,name=period,proto3" json:"period,omitempty"`
 }
 
@@ -203,7 +203,7 @@ func (m *ValidatorCurrentRewards) GetPeriod() uint64 {
 // ValidatorAccumulatedCommission represents accumulated commission
 // for a validator kept as a running counter, can be withdrawn at any time.
 type ValidatorAccumulatedCommission struct {
-	Commission github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=commission,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.DecCoins" json:"commission"`
+	Commission github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=commission,proto3,castrepeated=github.com/joshklop/monomer-cosmos-sdk/types.DecCoins" json:"commission"`
 }
 
 func (m *ValidatorAccumulatedCommission) Reset()         { *m = ValidatorAccumulatedCommission{} }
@@ -249,7 +249,7 @@ func (m *ValidatorAccumulatedCommission) GetCommission() github_com_cosmos_cosmo
 // ValidatorOutstandingRewards represents outstanding (un-withdrawn) rewards
 // for a validator inexpensive to track, allows simple sanity checks.
 type ValidatorOutstandingRewards struct {
-	Rewards github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=rewards,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.DecCoins" json:"rewards"`
+	Rewards github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=rewards,proto3,castrepeated=github.com/joshklop/monomer-cosmos-sdk/types.DecCoins" json:"rewards"`
 }
 
 func (m *ValidatorOutstandingRewards) Reset()         { *m = ValidatorOutstandingRewards{} }
@@ -388,7 +388,7 @@ func (m *ValidatorSlashEvents) GetValidatorSlashEvents() []ValidatorSlashEvent {
 
 // FeePool is the global fee pool for distribution.
 type FeePool struct {
-	CommunityPool github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=community_pool,json=communityPool,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.DecCoins" json:"community_pool"`
+	CommunityPool github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,1,rep,name=community_pool,json=communityPool,proto3,castrepeated=github.com/joshklop/monomer-cosmos-sdk/types.DecCoins" json:"community_pool"`
 }
 
 func (m *FeePool) Reset()         { *m = FeePool{} }
@@ -445,7 +445,7 @@ type CommunityPoolSpendProposal struct {
 	Title       string                                   `protobuf:"bytes,1,opt,name=title,proto3" json:"title,omitempty"`
 	Description string                                   `protobuf:"bytes,2,opt,name=description,proto3" json:"description,omitempty"`
 	Recipient   string                                   `protobuf:"bytes,3,opt,name=recipient,proto3" json:"recipient,omitempty"`
-	Amount      github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,4,rep,name=amount,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coins" json:"amount"`
+	Amount      github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,4,rep,name=amount,proto3,castrepeated=github.com/joshklop/monomer-cosmos-sdk/types.Coins" json:"amount"`
 }
 
 func (m *CommunityPoolSpendProposal) Reset()         { *m = CommunityPoolSpendProposal{} }
@@ -544,7 +544,7 @@ func (m *DelegatorStartingInfo) GetHeight() uint64 {
 // of a delegator's delegation reward.
 type DelegationDelegatorReward struct {
 	ValidatorAddress string                                      `protobuf:"bytes,1,opt,name=validator_address,json=validatorAddress,proto3" json:"validator_address,omitempty"`
-	Reward           github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,2,rep,name=reward,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.DecCoins" json:"reward"`
+	Reward           github_com_cosmos_cosmos_sdk_types.DecCoins `protobuf:"bytes,2,rep,name=reward,proto3,castrepeated=github.com/joshklop/monomer-cosmos-sdk/types.DecCoins" json:"reward"`
 }
 
 func (m *DelegationDelegatorReward) Reset()         { *m = DelegationDelegatorReward{} }

@@ -13,10 +13,10 @@ import (
 	"cosmossdk.io/store/rootmulti"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/types/kv"
+	"github.com/joshklop/monomer-cosmos-sdk/types/simulation"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
 )
 
 func TestGetSimulationLog(t *testing.T) {

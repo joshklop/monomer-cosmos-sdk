@@ -10,12 +10,12 @@ import (
 	txsigning "cosmossdk.io/x/tx/signing"
 	"cosmossdk.io/x/tx/signing/aminojson"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
+	"github.com/joshklop/monomer-cosmos-sdk/types/tx"
+	"github.com/joshklop/monomer-cosmos-sdk/types/tx/signing"
 )
 
 // AuxTxBuilder is a client-side builder for creating an AuxSignerData.
@@ -214,8 +214,8 @@ func (b *AuxTxBuilder) GetSignBytes() ([]byte, error) {
 				TimeoutHeight: body.TimeoutHeight,
 				// AuxTxBuilder has no concern with extension options, so we set them to nil.
 				// This preserves pre-PR#16025 behavior where extension options were ignored, this code path:
-				// https://github.com/cosmos/cosmos-sdk/blob/ac3c209326a26b46f65a6cc6f5b5ebf6beb79b38/client/tx/aux_builder.go#L193
-				// https://github.com/cosmos/cosmos-sdk/blob/ac3c209326a26b46f65a6cc6f5b5ebf6beb79b38/x/auth/migrations/legacytx/stdsign.go#L49
+				// https://github.com/joshklop/monomer-cosmos-sdk/blob/ac3c209326a26b46f65a6cc6f5b5ebf6beb79b38/client/tx/aux_builder.go#L193
+				// https://github.com/joshklop/monomer-cosmos-sdk/blob/ac3c209326a26b46f65a6cc6f5b5ebf6beb79b38/x/auth/migrations/legacytx/stdsign.go#L49
 				ExtensionOptions:            nil,
 				NonCriticalExtensionOptions: nil,
 			}
@@ -236,7 +236,7 @@ func (b *AuxTxBuilder) GetSignBytes() ([]byte, error) {
 						// Aux signer never signs over fee.
 						// For LEGACY_AMINO_JSON, we use the convention to sign
 						// over empty fees.
-						// ref: https://github.com/cosmos/cosmos-sdk/pull/10348
+						// ref: https://github.com/joshklop/monomer-cosmos-sdk/pull/10348
 						Fee: &txv1beta1.Fee{},
 					},
 				},

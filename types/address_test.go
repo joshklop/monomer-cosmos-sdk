@@ -13,11 +13,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	"sigs.k8s.io/yaml"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/bech32/legacybech32" //nolint:staticcheck // SA1019: legacybech32 is deprecated: use the bech32 package instead.
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/ed25519"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/bech32/legacybech32" //nolint:staticcheck // SA1019: legacybech32 is deprecated: use the bech32 package instead.
 )
 
 type addressTestSuite struct {
@@ -128,7 +128,7 @@ func (s *addressTestSuite) TestRandBech32AccAddrConsistency() {
 
 // Test that the account address cache ignores the bech32 prefix setting, retrieving bech32 addresses from the cache.
 // This will cause the AccAddress.String() to print out unexpected prefixes if the config was changed between bech32 lookups.
-// See https://github.com/cosmos/cosmos-sdk/issues/15317.
+// See https://github.com/joshklop/monomer-cosmos-sdk/issues/15317.
 func (s *addressTestSuite) TestAddrCache() {
 	// Use a random key
 	pubBz := make([]byte, ed25519.PubKeySize)
@@ -163,7 +163,7 @@ func (s *addressTestSuite) TestAddrCache() {
 
 // Test that the bech32 prefix is respected when the address cache is disabled.
 // This causes AccAddress.String() to print out the expected prefixes if the config is changed between bech32 lookups.
-// See https://github.com/cosmos/cosmos-sdk/issues/15317.
+// See https://github.com/joshklop/monomer-cosmos-sdk/issues/15317.
 func (s *addressTestSuite) TestAddrCacheDisabled() {
 	types.SetAddrCacheEnabled(false)
 

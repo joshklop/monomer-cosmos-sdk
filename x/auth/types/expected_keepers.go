@@ -3,7 +3,7 @@ package types
 import (
 	"context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 // BankKeeper defines the contract needed for supply related APIs (noalias)

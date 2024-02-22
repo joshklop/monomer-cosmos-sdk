@@ -8,14 +8,14 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/server"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bankexported "github.com/cosmos/cosmos-sdk/x/bank/exported"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	addresscodec "github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	cdctypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	"github.com/joshklop/monomer-cosmos-sdk/server"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	bankexported "github.com/joshklop/monomer-cosmos-sdk/x/bank/exported"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil/types"
 )
 
 type doNothingUnmarshalJSON struct {
@@ -34,7 +34,7 @@ func (dni *doNothingIterator) IterateGenesisBalances(_ codec.JSONCodec, _ map[st
 }
 
 // Ensures that CollectTx correctly traverses directories and won't error out on encountering
-// a directory during traversal of the first level. See issue https://github.com/cosmos/cosmos-sdk/issues/6788.
+// a directory during traversal of the first level. See issue https://github.com/joshklop/monomer-cosmos-sdk/issues/6788.
 func TestCollectTxsHandlesDirectories(t *testing.T) {
 	testDir, err := os.MkdirTemp(os.TempDir(), "testCollectTxs")
 	if err != nil {

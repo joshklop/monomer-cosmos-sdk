@@ -21,16 +21,16 @@ import (
 	storetypes "cosmossdk.io/store/types"
 	"cosmossdk.io/x/feegrant"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	authzkeeper "github.com/cosmos/cosmos-sdk/x/authz/keeper"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
-	simcli "github.com/cosmos/cosmos-sdk/x/simulation/client/cli"
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/joshklop/monomer-cosmos-sdk/baseapp"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	"github.com/joshklop/monomer-cosmos-sdk/server"
+	simtestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/sims"
+	simtypes "github.com/joshklop/monomer-cosmos-sdk/types/simulation"
+	authzkeeper "github.com/joshklop/monomer-cosmos-sdk/x/authz/keeper"
+	"github.com/joshklop/monomer-cosmos-sdk/x/simulation"
+	simcli "github.com/joshklop/monomer-cosmos-sdk/x/simulation/client/cli"
+	slashingtypes "github.com/joshklop/monomer-cosmos-sdk/x/slashing/types"
+	stakingtypes "github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 // SimAppChainID hardcoded chainID for simulation

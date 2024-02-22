@@ -12,15 +12,15 @@ import (
 
 	"cosmossdk.io/log"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	txsigning "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/gov"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/mempool"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	simtypes "github.com/joshklop/monomer-cosmos-sdk/types/simulation"
+	txsigning "github.com/joshklop/monomer-cosmos-sdk/types/tx/signing"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/signing"
+	"github.com/joshklop/monomer-cosmos-sdk/x/distribution"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov"
 )
 
 // testPubKey is a dummy implementation of PubKey used for testing.

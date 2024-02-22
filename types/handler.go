@@ -98,7 +98,7 @@ func ChainPostDecorators(chain ...PostDecorator) PostHandler {
 //	       \  \       \ |     | /        /
 //	 snd    \  \      \        /
 //
-// Deprecated: Terminator is retired (ref https://github.com/cosmos/cosmos-sdk/pull/16076).
+// Deprecated: Terminator is retired (ref https://github.com/joshklop/monomer-cosmos-sdk/pull/16076).
 type Terminator struct{}
 
 // AnteHandle returns the provided Context and nil error

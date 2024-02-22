@@ -3,9 +3,9 @@ package v4
 import (
 	"encoding/binary"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/address"
+	"github.com/joshklop/monomer-cosmos-sdk/types/kv"
 )
 
 const MissedBlockBitmapChunkSize = 1024 // 2^10 bits

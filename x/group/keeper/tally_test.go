@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/group"
 )
 
 func (s *TestSuite) TestTally() {

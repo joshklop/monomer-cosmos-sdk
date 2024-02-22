@@ -5,8 +5,8 @@ import (
 
 	"cosmossdk.io/errors"
 
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	govtypes "github.com/joshklop/monomer-cosmos-sdk/x/gov/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/mint/types"
 )
 
 var _ types.MsgServer = msgServer{}

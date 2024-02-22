@@ -4,8 +4,8 @@ import (
 	"cosmossdk.io/store/prefix"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/types/address"
-	v1auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v1"
+	"github.com/joshklop/monomer-cosmos-sdk/types/address"
+	v1auth "github.com/joshklop/monomer-cosmos-sdk/x/auth/migrations/v1"
 )
 
 // MigratePrefixAddress is a helper function that migrates all keys of format:

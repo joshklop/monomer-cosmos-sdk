@@ -63,7 +63,7 @@ func TestScenario(t *testing.T) {
 	checkEncodeDecodeEntries(t, table, store.IndexStoreReader())
 }
 
-// isolated test for bug - https://github.com/cosmos/cosmos-sdk/issues/11431
+// isolated test for bug - https://github.com/joshklop/monomer-cosmos-sdk/issues/11431
 func TestPaginationLimitCountTotal(t *testing.T) {
 	table, err := ormtable.Build(ormtable.Options{
 		MessageType: (&testpb.ExampleTable{}).ProtoReflect().Type(),

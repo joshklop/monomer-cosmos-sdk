@@ -16,7 +16,7 @@ import (
 	"cosmossdk.io/client/v2/autocli"
 	"cosmossdk.io/client/v2/autocli/flag"
 
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
+	addresscodec "github.com/joshklop/monomer-cosmos-sdk/codec/address"
 )
 
 var (

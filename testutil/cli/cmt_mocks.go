@@ -10,7 +10,7 @@ import (
 	coretypes "github.com/cometbft/cometbft/rpc/core/types"
 	cmttypes "github.com/cometbft/cometbft/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
 )
 
 var _ client.CometRPC = (*MockCometRPC)(nil)

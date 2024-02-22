@@ -7,7 +7,7 @@ import (
 	fmt "fmt"
 	types1 "github.com/cometbft/cometbft/abci/types"
 	types2 "github.com/cometbft/cometbft/proto/tendermint/types"
-	types "github.com/cosmos/cosmos-sdk/codec/types"
+	types "github.com/joshklop/monomer-cosmos-sdk/codec/types"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"

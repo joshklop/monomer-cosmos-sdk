@@ -5,10 +5,10 @@ import (
 
 	"cosmossdk.io/math"
 
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	addresscodec "github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 func (s *KeeperTestSuite) TestIncrementUnbondingID() {

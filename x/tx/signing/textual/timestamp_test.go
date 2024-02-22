@@ -37,7 +37,7 @@ func TestTimestampJSONTestcasesTestData(t *testing.T) {
 }
 
 // Tests to ensure that we compare standardized forms of the final timestamppb.Timestamp.
-// Please see issue https://github.com/cosmos/cosmos-sdk/issues/15761
+// Please see issue https://github.com/joshklop/monomer-cosmos-sdk/issues/15761
 func TestTimestampJsonTestcasesExtraneousNanos(t *testing.T) {
 	testTimestampJSONTestcases(t, []byte(`[{"proto":{"nAnos":1000000000},"text":"1970-01-01T00:00:01Z"}]`))
 }
@@ -75,7 +75,7 @@ func testTimestampJSONTestcases(t *testing.T, raw []byte) {
 			// Please avoid using proto.Equal to compare timestamps given they aren't
 			// in standardized form and will produce false positives for example given input:
 			//  []byte(`[{"proto":{"nanos":1000000000}}]`)
-			// Per issue: https://github.com/cosmos/cosmos-sdk/issues/15761
+			// Per issue: https://github.com/joshklop/monomer-cosmos-sdk/issues/15761
 			require.True(t, timestamp.AsTime().Equal(tc.Proto.AsTime()))
 		})
 	}

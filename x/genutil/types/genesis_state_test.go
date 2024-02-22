@@ -9,15 +9,15 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil"
+	"github.com/joshklop/monomer-cosmos-sdk/x/genutil/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/staking"
+	stakingtypes "github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 var (
@@ -27,7 +27,7 @@ var (
 
 func TestNetGenesisState(t *testing.T) {
 	gen := types.NewGenesisState(nil)
-	assert.NotNil(t, gen.GenTxs) // https://github.com/cosmos/cosmos-sdk/issues/5086
+	assert.NotNil(t, gen.GenTxs) // https://github.com/joshklop/monomer-cosmos-sdk/issues/5086
 
 	gen = types.NewGenesisState(
 		[]json.RawMessage{

@@ -15,11 +15,11 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/internal/conv"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/bech32"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/internal/conv"
+	"github.com/joshklop/monomer-cosmos-sdk/types/address"
+	"github.com/joshklop/monomer-cosmos-sdk/types/bech32"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
 )
 
 const (
@@ -162,7 +162,7 @@ func AccAddressFromHexUnsafe(address string) (addr AccAddress, err error) {
 // according to the default address rules or a custom address verifier set by
 // GetConfig().SetAddressVerifier().
 // TODO make an issue to get rid of global Config
-// ref: https://github.com/cosmos/cosmos-sdk/issues/9690
+// ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/9690
 func VerifyAddressFormat(bz []byte) error {
 	verifier := GetConfig().GetAddressVerifier()
 	if verifier != nil {

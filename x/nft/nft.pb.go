@@ -5,7 +5,7 @@ package nft
 
 import (
 	fmt "fmt"
-	types "github.com/cosmos/cosmos-sdk/codec/types"
+	types "github.com/joshklop/monomer-cosmos-sdk/codec/types"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"
 	math "math"

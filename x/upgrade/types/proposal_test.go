@@ -8,9 +8,9 @@ import (
 
 	"cosmossdk.io/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	gov "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	gov "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1beta1"
 )
 
 type ProposalWrapper struct {

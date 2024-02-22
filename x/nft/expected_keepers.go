@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/core/address"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 // BankKeeper defines the contract needed to be fulfilled for banking and supply

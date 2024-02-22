@@ -11,17 +11,17 @@ import (
 	"cosmossdk.io/core/header"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authcodec "github.com/cosmos/cosmos-sdk/x/auth/codec"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/vesting"
-	"github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/testdata"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	authcodec "github.com/joshklop/monomer-cosmos-sdk/x/auth/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/keeper"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/vesting"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/vesting/types"
 )
 
 var (

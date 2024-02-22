@@ -3,8 +3,8 @@ package v2
 import (
 	"encoding/binary"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/address"
 )
 
 var ValidatorMissedBlockBitArrayKeyPrefix = []byte{0x02}

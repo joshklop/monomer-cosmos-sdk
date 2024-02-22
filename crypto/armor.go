@@ -13,11 +13,11 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/bcrypt"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/xsalsa20symmetric"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/legacy"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/bcrypt"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/xsalsa20symmetric"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
 )
 
 const (

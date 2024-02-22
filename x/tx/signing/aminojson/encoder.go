@@ -17,7 +17,7 @@ import (
 // cosmosIntEncoder provides legacy compatible encoding for cosmos.Int types. In gogo messages these are sometimes
 // represented by a `cosmos-sdk/types.Int` through the usage of the option:
 //
-//	(gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"
+//	(gogoproto.customtype) = "github.com/joshklop/monomer-cosmos-sdk/types.Int"
 //
 // In pulsar message they represented as strings, which is the only format this encoder supports.
 func cosmosIntEncoder(_ *Encoder, v protoreflect.Value, w io.Writer) error {
@@ -67,7 +67,7 @@ func cosmosDecEncoder(_ *Encoder, v protoreflect.Value, w io.Writer) error {
 }
 
 // nullSliceAsEmptyEncoder replicates the behavior at:
-// https://github.com/cosmos/cosmos-sdk/blob/be9bd7a8c1b41b115d58f4e76ee358e18a52c0af/types/coin.go#L199-L205
+// https://github.com/joshklop/monomer-cosmos-sdk/blob/be9bd7a8c1b41b115d58f4e76ee358e18a52c0af/types/coin.go#L199-L205
 func nullSliceAsEmptyEncoder(enc *Encoder, v protoreflect.Value, w io.Writer) error {
 	switch list := v.Interface().(type) {
 	case protoreflect.List:
@@ -82,7 +82,7 @@ func nullSliceAsEmptyEncoder(enc *Encoder, v protoreflect.Value, w io.Writer) er
 }
 
 // keyFieldEncoder replicates the behavior at described at:
-// https://github.com/cosmos/cosmos-sdk/blob/b49f948b36bc991db5be431607b475633aed697e/proto/cosmos/crypto/secp256k1/keys.proto#L16
+// https://github.com/joshklop/monomer-cosmos-sdk/blob/b49f948b36bc991db5be431607b475633aed697e/proto/cosmos/crypto/secp256k1/keys.proto#L16
 // The message is treated if it were bytes directly without the key field specified.
 func keyFieldEncoder(_ *Encoder, msg protoreflect.Message, w io.Writer) error {
 	keyField := msg.Descriptor().Fields().ByName("key")
@@ -111,7 +111,7 @@ type moduleAccountPretty struct {
 }
 
 // moduleAccountEncoder replicates the behavior in
-// https://github.com/cosmos/cosmos-sdk/blob/41a3dfeced2953beba3a7d11ec798d17ee19f506/x/auth/types/account.go#L230-L254
+// https://github.com/joshklop/monomer-cosmos-sdk/blob/41a3dfeced2953beba3a7d11ec798d17ee19f506/x/auth/types/account.go#L230-L254
 func moduleAccountEncoder(_ *Encoder, msg protoreflect.Message, w io.Writer) error {
 	ma := msg.Interface().(*authapi.ModuleAccount)
 	pretty := moduleAccountPretty{
@@ -138,9 +138,9 @@ func moduleAccountEncoder(_ *Encoder, msg protoreflect.Message, w io.Writer) err
 }
 
 // thresholdStringEncoder replicates the behavior at:
-// https://github.com/cosmos/cosmos-sdk/blob/4a6a1e3cb8de459891cb0495052589673d14ef51/crypto/keys/multisig/amino.go#L35
+// https://github.com/joshklop/monomer-cosmos-sdk/blob/4a6a1e3cb8de459891cb0495052589673d14ef51/crypto/keys/multisig/amino.go#L35
 // also see:
-// https://github.com/cosmos/cosmos-sdk/blob/b49f948b36bc991db5be431607b475633aed697e/proto/cosmos/crypto/multisig/keys.proto#L15/
+// https://github.com/joshklop/monomer-cosmos-sdk/blob/b49f948b36bc991db5be431607b475633aed697e/proto/cosmos/crypto/multisig/keys.proto#L15/
 func thresholdStringEncoder(enc *Encoder, msg protoreflect.Message, w io.Writer) error {
 	pk, ok := msg.Interface().(*multisig.LegacyAminoPubKey)
 	if !ok {

@@ -8,7 +8,7 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/joshklop/monomer-cosmos-sdk/types/kv"
 )
 
 // SortedJSON takes any JSON and returns it sorted by keys. Also, all white-spaces

@@ -8,12 +8,12 @@ import (
 
 	"cosmossdk.io/simapp"
 
-	sdktestutil "github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	sdktestutil "github.com/joshklop/monomer-cosmos-sdk/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/network"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	grpctypes "github.com/joshklop/monomer-cosmos-sdk/types/grpc"
+	"github.com/joshklop/monomer-cosmos-sdk/types/query"
+	"github.com/joshklop/monomer-cosmos-sdk/x/distribution/types"
 )
 
 type GRPCQueryTestSuite struct {

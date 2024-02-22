@@ -6,8 +6,8 @@ import (
 	"cosmossdk.io/errors"
 	"cosmossdk.io/x/evidence/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
 )
 
 type msgServer struct {

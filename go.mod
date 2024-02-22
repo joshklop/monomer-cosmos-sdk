@@ -2,7 +2,7 @@ go 1.21
 
 toolchain go1.21.0
 
-module github.com/cosmos/cosmos-sdk
+module github.com/joshklop/monomer-cosmos-sdk
 
 require (
 	cosmossdk.io/api v0.7.2

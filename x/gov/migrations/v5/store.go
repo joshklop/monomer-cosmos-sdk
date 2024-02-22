@@ -4,10 +4,10 @@ import (
 	"cosmossdk.io/collections"
 	corestoretypes "cosmossdk.io/core/store"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v4 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v4"
-	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	v4 "github.com/joshklop/monomer-cosmos-sdk/x/gov/migrations/v4"
+	govv1 "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1"
 )
 
 var (

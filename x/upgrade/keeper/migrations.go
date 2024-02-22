@@ -7,8 +7,8 @@ import (
 	"cosmossdk.io/store/prefix"
 	"cosmossdk.io/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 // Migrator is a struct for handling in-place store migrations.

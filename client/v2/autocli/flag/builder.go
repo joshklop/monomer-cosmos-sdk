@@ -21,7 +21,7 @@ import (
 	"cosmossdk.io/client/v2/internal/util"
 	"cosmossdk.io/core/address"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
 )
 
 const (

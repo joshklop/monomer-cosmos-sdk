@@ -23,17 +23,17 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/grpc/cmtservice"
-	rpc "github.com/cosmos/cosmos-sdk/client/rpc"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	servercmtlog "github.com/cosmos/cosmos-sdk/server/log"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/version"
-	auth "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	"github.com/joshklop/monomer-cosmos-sdk/client/grpc/cmtservice"
+	rpc "github.com/joshklop/monomer-cosmos-sdk/client/rpc"
+	cryptocodec "github.com/joshklop/monomer-cosmos-sdk/crypto/codec"
+	servercmtlog "github.com/joshklop/monomer-cosmos-sdk/server/log"
+	"github.com/joshklop/monomer-cosmos-sdk/server/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/types/query"
+	"github.com/joshklop/monomer-cosmos-sdk/version"
+	auth "github.com/joshklop/monomer-cosmos-sdk/x/auth/client/cli"
 )
 
 // StatusCommand returns the command to return the status of the network.

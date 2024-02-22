@@ -5,7 +5,7 @@ import (
 
 	"github.com/cockroachdb/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 // CircuitBreaker is an interface that defines the methods for a circuit breaker.

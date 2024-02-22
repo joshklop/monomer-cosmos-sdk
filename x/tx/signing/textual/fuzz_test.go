@@ -94,7 +94,7 @@ func FuzzTimestampJSONParseToParseRoundTrip(f *testing.F) {
 			// Please avoid using proto.Equal to compare timestamps given they aren't
 			// in standardized form and will produce false positives for example given input:
 			//  []byte(`[{"proto":{"nanos":1000000000}}]`)
-			// Per issue: https://github.com/cosmos/cosmos-sdk/issues/15761
+			// Per issue: https://github.com/joshklop/monomer-cosmos-sdk/issues/15761
 			if !gotTs.AsTime().Equal(tc.Proto.AsTime()) {
 				t.Fatalf("Roundtrip mismatch\n\tGot:  %#v\n\tWant: %#v", gotTs, tc.Proto)
 			}

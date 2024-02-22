@@ -5,10 +5,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	"github.com/joshklop/monomer-cosmos-sdk/client/tx"
+	authclient "github.com/joshklop/monomer-cosmos-sdk/x/auth/client"
 )
 
 // GetSimulateCmd returns a command that simulates whether a transaction will be

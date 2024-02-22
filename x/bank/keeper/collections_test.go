@@ -13,15 +13,15 @@ import (
 	"cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	"github.com/joshklop/monomer-cosmos-sdk/runtime"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	moduletestutil "github.com/joshklop/monomer-cosmos-sdk/types/module/testutil"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/bank/keeper"
+	banktestutil "github.com/joshklop/monomer-cosmos-sdk/x/bank/testutil"
+	banktypes "github.com/joshklop/monomer-cosmos-sdk/x/bank/types"
 )
 
 func TestBankStateCompatibility(t *testing.T) {
@@ -48,7 +48,7 @@ func TestBankStateCompatibility(t *testing.T) {
 
 	// test we can decode balances without problems
 	// using the old value format of the denom to address index
-	bankDenomAddressLegacyIndexValue := []byte{0} // taken from: https://github.com/cosmos/cosmos-sdk/blob/v0.47.3/x/bank/keeper/send.go#L361
+	bankDenomAddressLegacyIndexValue := []byte{0} // taken from: https://github.com/joshklop/monomer-cosmos-sdk/blob/v0.47.3/x/bank/keeper/send.go#L361
 	rawKey, err := collections.EncodeKeyWithPrefix(
 		banktypes.DenomAddressPrefix,
 		k.Balances.Indexes.Denom.KeyCodec(),

@@ -11,16 +11,16 @@ import (
 	"cosmossdk.io/simapp"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client/grpc/cmtservice"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/types"
-	qtypes "github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/version"
-	_ "github.com/cosmos/cosmos-sdk/x/distribution"
-	_ "github.com/cosmos/cosmos-sdk/x/gov"
+	"github.com/joshklop/monomer-cosmos-sdk/client/grpc/cmtservice"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/network"
+	"github.com/joshklop/monomer-cosmos-sdk/types"
+	qtypes "github.com/joshklop/monomer-cosmos-sdk/types/query"
+	"github.com/joshklop/monomer-cosmos-sdk/version"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/distribution"
+	_ "github.com/joshklop/monomer-cosmos-sdk/x/gov"
 )
 
 type E2ETestSuite struct {

@@ -10,9 +10,9 @@ import (
 	"cosmossdk.io/collections"
 	errorsmod "cosmossdk.io/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/gov/types"
+	v1 "github.com/joshklop/monomer-cosmos-sdk/x/gov/types/v1"
 )
 
 // SubmitProposal creates a new proposal given an array of messages
@@ -73,7 +73,7 @@ func (keeper Keeper) SubmitProposal(ctx context.Context, messages []sdk.Msg, met
 		// proposal in a cached context.
 		// For other Msgs, we do not verify the proposal messages any further.
 		// They may fail upon execution.
-		// ref: https://github.com/cosmos/cosmos-sdk/pull/10868#discussion_r784872842
+		// ref: https://github.com/joshklop/monomer-cosmos-sdk/pull/10868#discussion_r784872842
 		if msg, ok := msg.(*v1.MsgExecLegacyContent); ok {
 			cacheCtx, _ := sdkCtx.CacheContext()
 			if _, err := handler(cacheCtx, msg); err != nil {
@@ -139,7 +139,7 @@ func (keeper Keeper) CancelProposal(ctx context.Context, proposalID uint64, prop
 	}
 
 	// Checking proposal have proposer or not because old proposal doesn't have proposer field,
-	// https://github.com/cosmos/cosmos-sdk/blob/v0.46.2/proto/cosmos/gov/v1/gov.proto#L43
+	// https://github.com/joshklop/monomer-cosmos-sdk/blob/v0.46.2/proto/cosmos/gov/v1/gov.proto#L43
 	if proposal.Proposer == "" {
 		return types.ErrInvalidProposal.Wrapf("proposal %d doesn't have proposer %s, so cannot be canceled", proposalID, proposer)
 	}

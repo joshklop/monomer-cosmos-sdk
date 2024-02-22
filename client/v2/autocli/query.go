@@ -9,7 +9,7 @@ import (
 	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	"cosmossdk.io/x/tx/signing/aminojson"
 	"github.com/cockroachdb/errors"
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
 	"github.com/spf13/cobra"
 	"google.golang.org/protobuf/reflect/protoreflect"
 

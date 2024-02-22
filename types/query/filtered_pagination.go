@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
 )
 
 // FilteredPaginate does pagination of all the results in the PrefixStore based on the

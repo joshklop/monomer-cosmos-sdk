@@ -1,8 +1,8 @@
 package module
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/group/keeper"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/group/keeper"
 )
 
 // EndBlocker called at every block, updates proposal's `FinalTallyResult` and

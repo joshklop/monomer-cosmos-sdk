@@ -5,8 +5,8 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
+	"github.com/joshklop/monomer-cosmos-sdk/server"
+	servertypes "github.com/joshklop/monomer-cosmos-sdk/server/types"
 )
 
 // ExportSnapshotCmd returns a command to take a snapshot of the application state

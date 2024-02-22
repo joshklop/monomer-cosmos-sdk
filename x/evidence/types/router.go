@@ -6,7 +6,7 @@ import (
 
 	"cosmossdk.io/x/evidence/exported"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 type (

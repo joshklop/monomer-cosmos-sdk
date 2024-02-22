@@ -5,7 +5,7 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/joshklop/monomer-cosmos-sdk/x/group/errors"
 )
 
 // MaxBytesLen is the maximum allowed length for a key part of type []byte

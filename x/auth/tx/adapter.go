@@ -9,7 +9,7 @@ import (
 	txv1beta1 "cosmossdk.io/api/cosmos/tx/v1beta1"
 	txsigning "cosmossdk.io/x/tx/signing"
 
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/joshklop/monomer-cosmos-sdk/types/tx"
 )
 
 // GetSigningTxData returns an x/tx/signing.TxData representation of a transaction for use in the signing
@@ -97,8 +97,8 @@ func (w *wrapper) GetSigningTxData() txsigning.TxData {
 
 func adaptModeInfo(legacy *tx.ModeInfo, res *txv1beta1.ModeInfo) {
 	// handle nil modeInfo. this is permissible through the code path:
-	// https://github.com/cosmos/cosmos-sdk/blob/4a6a1e3cb8de459891cb0495052589673d14ef51/x/auth/tx/builder.go#L295
-	// -> https://github.com/cosmos/cosmos-sdk/blob/b7841e3a76a38d069c1b9cb3d48368f7a67e9c26/x/auth/tx/sigs.go#L15-L17
+	// https://github.com/joshklop/monomer-cosmos-sdk/blob/4a6a1e3cb8de459891cb0495052589673d14ef51/x/auth/tx/builder.go#L295
+	// -> https://github.com/joshklop/monomer-cosmos-sdk/blob/b7841e3a76a38d069c1b9cb3d48368f7a67e9c26/x/auth/tx/sigs.go#L15-L17
 	// when signature.Data is nil.
 	if legacy == nil {
 		return

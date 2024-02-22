@@ -11,16 +11,16 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/log"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	slashingkeeper "github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	"github.com/cosmos/cosmos-sdk/x/slashing/testutil"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	simtestutil "github.com/joshklop/monomer-cosmos-sdk/testutil/sims"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	bankkeeper "github.com/joshklop/monomer-cosmos-sdk/x/bank/keeper"
+	"github.com/joshklop/monomer-cosmos-sdk/x/slashing"
+	slashingkeeper "github.com/joshklop/monomer-cosmos-sdk/x/slashing/keeper"
+	"github.com/joshklop/monomer-cosmos-sdk/x/slashing/testutil"
+	stakingkeeper "github.com/joshklop/monomer-cosmos-sdk/x/staking/keeper"
+	stakingtestutil "github.com/joshklop/monomer-cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/joshklop/monomer-cosmos-sdk/x/staking/types"
 )
 
 func TestBeginBlocker(t *testing.T) {

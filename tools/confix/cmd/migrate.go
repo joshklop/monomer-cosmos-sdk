@@ -9,7 +9,7 @@ import (
 
 	"cosmossdk.io/tools/confix"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
 )
 
 var (

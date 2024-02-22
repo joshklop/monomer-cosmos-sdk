@@ -327,8 +327,8 @@ func (s *extSnapshotter) RestoreExtension(height uint64, format uint32, payloadR
 func GetTempDir(tb testing.TB) string {
 	tb.Helper()
 	// os.MkDir() is used instead of testing.T.TempDir()
-	// see https://github.com/cosmos/cosmos-sdk/pull/8475 and
-	// https://github.com/cosmos/cosmos-sdk/pull/10341 for
+	// see https://github.com/joshklop/monomer-cosmos-sdk/pull/8475 and
+	// https://github.com/joshklop/monomer-cosmos-sdk/pull/10341 for
 	// this change's rationale.
 	tempdir, err := os.MkdirTemp("", "")
 	require.NoError(tb, err)

@@ -3,8 +3,8 @@ package keyring
 import (
 	signingv1beta1 "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	cryptotypes "github.com/joshklop/monomer-cosmos-sdk/crypto/types"
+	authsigning "github.com/joshklop/monomer-cosmos-sdk/x/auth/signing"
 )
 
 // autoCLIKeyring represents the keyring interface used by the AutoCLI.

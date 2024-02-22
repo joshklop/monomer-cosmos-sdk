@@ -9,14 +9,14 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	"github.com/cosmos/cosmos-sdk/server/grpc/gogoreflection"
-	reflection "github.com/cosmos/cosmos-sdk/server/grpc/reflection/v2alpha1"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino" // Import amino.proto file for reflection
+	"github.com/joshklop/monomer-cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/server/config"
+	"github.com/joshklop/monomer-cosmos-sdk/server/grpc/gogoreflection"
+	reflection "github.com/joshklop/monomer-cosmos-sdk/server/grpc/reflection/v2alpha1"
+	"github.com/joshklop/monomer-cosmos-sdk/server/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	_ "github.com/joshklop/monomer-cosmos-sdk/types/tx/amino" // Import amino.proto file for reflection
 )
 
 // NewGRPCServer returns a correctly configured and initialized gRPC server.

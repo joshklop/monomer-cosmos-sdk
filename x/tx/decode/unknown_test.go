@@ -646,7 +646,7 @@ func TestRejectUnknownFieldsFlat(t *testing.T) {
 	}
 }
 
-// Issue https://github.com/cosmos/cosmos-sdk/issues/7222, we need to ensure that repeated
+// Issue https://github.com/joshklop/monomer-cosmos-sdk/issues/7222, we need to ensure that repeated
 // uint64 are recognized as packed.
 func TestPackedEncoding(t *testing.T) {
 	data := &testpb.TestRepeatedUints{Nums: []uint64{12, 13}}

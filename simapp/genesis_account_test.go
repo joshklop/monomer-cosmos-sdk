@@ -9,9 +9,9 @@ import (
 
 	"cosmossdk.io/simapp"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/joshklop/monomer-cosmos-sdk/crypto/keys/secp256k1"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	authtypes "github.com/joshklop/monomer-cosmos-sdk/x/auth/types"
 )
 
 func TestSimGenesisAccountValidate(t *testing.T) {

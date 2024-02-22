@@ -8,7 +8,7 @@ import (
 
 	"cosmossdk.io/simapp"
 
-	"github.com/cosmos/cosmos-sdk/testutil/network"
+	"github.com/joshklop/monomer-cosmos-sdk/testutil/network"
 )
 
 type IntegrationTestSuite struct {

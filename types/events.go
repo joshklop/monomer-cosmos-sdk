@@ -12,7 +12,7 @@ import (
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
 )
 
 type EventManagerI interface {

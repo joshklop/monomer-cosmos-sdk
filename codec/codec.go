@@ -5,7 +5,7 @@ import (
 	"google.golang.org/grpc/encoding"
 	protov2 "google.golang.org/protobuf/proto"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/joshklop/monomer-cosmos-sdk/codec/types"
 )
 
 type (

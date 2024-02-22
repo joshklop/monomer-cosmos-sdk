@@ -8,10 +8,10 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/x/feegrant"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/x/auth/migrations/legacytx"
 )
 
 func TestAminoJSON(t *testing.T) {
@@ -28,7 +28,7 @@ func TestAminoJSON(t *testing.T) {
 	// `{"account_number":"1","chain_id":"foo","fee":{"amount":[],"gas":"0"},"memo":"memo","msgs":[{"allowance":{"spend_limit":[{"amount":"100","denom":"foo"}]},"grantee":"cosmos1def","granter":"cosmos1abc"}],"sequence":"1","timeout_height":"1"}`
 	//
 	// This was a bug. Now, it's as below, See how there's `type` & `value` fields.
-	// ref: https://github.com/cosmos/cosmos-sdk/issues/11190
+	// ref: https://github.com/joshklop/monomer-cosmos-sdk/issues/11190
 	// ref: https://github.com/cosmos/cosmjs/issues/1026
 	msg = &feegrant.MsgGrantAllowance{Granter: "cosmos1abc", Grantee: "cosmos1def", Allowance: allowanceAny}
 	tx.Msgs = []sdk.Msg{msg}

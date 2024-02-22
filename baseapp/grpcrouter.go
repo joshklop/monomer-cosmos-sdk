@@ -10,11 +10,11 @@ import (
 	"google.golang.org/grpc/encoding"
 	"google.golang.org/protobuf/runtime/protoiface"
 
-	"github.com/cosmos/cosmos-sdk/baseapp/internal/protocompat"
-	"github.com/cosmos/cosmos-sdk/client/grpc/reflection"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/joshklop/monomer-cosmos-sdk/baseapp/internal/protocompat"
+	"github.com/joshklop/monomer-cosmos-sdk/client/grpc/reflection"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	codectypes "github.com/joshklop/monomer-cosmos-sdk/codec/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 // GRPCQueryRouter routes ABCI Query requests to GRPC handlers

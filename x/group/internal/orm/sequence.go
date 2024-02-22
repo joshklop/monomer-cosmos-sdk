@@ -7,7 +7,7 @@ import (
 	"cosmossdk.io/store/prefix"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/joshklop/monomer-cosmos-sdk/x/group/errors"
 )
 
 // sequenceStorageKey is a fix key to read/ write data on the storage layer

@@ -7,8 +7,8 @@ import (
 
 	"sigs.k8s.io/yaml"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	cryptokeyring "github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/joshklop/monomer-cosmos-sdk/client/flags"
+	cryptokeyring "github.com/joshklop/monomer-cosmos-sdk/crypto/keyring"
 )
 
 type bechKeyOutFn func(k *cryptokeyring.Record) (KeyOutput, error)

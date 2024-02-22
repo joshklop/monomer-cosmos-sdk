@@ -11,15 +11,15 @@ import (
 	cosmosmsg "cosmossdk.io/api/cosmos/msg/v1"
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
+	sdkerrors "github.com/joshklop/monomer-cosmos-sdk/types/errors"
 )
 
 // Configurator provides the hooks to allow modules to configure and register
 // their services in the RegisterServices method. It is designed to eventually
 // support module object capabilities isolation as described in
-// https://github.com/cosmos/cosmos-sdk/issues/7093
+// https://github.com/joshklop/monomer-cosmos-sdk/issues/7093
 type Configurator interface {
 	grpc.Server
 

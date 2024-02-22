@@ -8,7 +8,7 @@ import (
 	"github.com/pelletier/go-toml/v2"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/joshklop/monomer-cosmos-sdk/client"
 )
 
 func ViewCommand() *cobra.Command {

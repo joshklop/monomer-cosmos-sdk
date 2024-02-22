@@ -8,8 +8,8 @@ import (
 
 	"cosmossdk.io/x/feegrant"
 
-	codecaddress "github.com/cosmos/cosmos-sdk/codec/address"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	codecaddress "github.com/joshklop/monomer-cosmos-sdk/codec/address"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 func TestMarshalAndUnmarshalFeegrantKey(t *testing.T) {

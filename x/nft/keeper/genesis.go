@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/x/nft"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/joshklop/monomer-cosmos-sdk/types"
 )
 
 // InitGenesis initializes the nft module's genesis state from a given

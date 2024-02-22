@@ -6,8 +6,8 @@ package testdata
 import (
 	context "context"
 	fmt "fmt"
-	_ "github.com/cosmos/cosmos-sdk/types/msgservice"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino"
+	_ "github.com/joshklop/monomer-cosmos-sdk/types/msgservice"
+	_ "github.com/joshklop/monomer-cosmos-sdk/types/tx/amino"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	grpc1 "github.com/cosmos/gogoproto/grpc"
 	proto "github.com/cosmos/gogoproto/proto"
@@ -127,7 +127,7 @@ func (m *MsgCreateDogResponse) GetName() string {
 }
 
 // TestMsg is msg type for testing protobuf message using any, as defined in
-// https://github.com/cosmos/cosmos-sdk/issues/6213.
+// https://github.com/joshklop/monomer-cosmos-sdk/issues/6213.
 type TestMsg struct {
 	Signers []string `protobuf:"bytes,1,rep,name=signers,proto3" json:"signers,omitempty"`
 }

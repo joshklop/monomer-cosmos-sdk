@@ -8,7 +8,7 @@ import (
 	"cosmossdk.io/core/store"
 	"cosmossdk.io/x/circuit/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/joshklop/monomer-cosmos-sdk/codec"
 )
 
 // Keeper defines the circuit module's keeper.
